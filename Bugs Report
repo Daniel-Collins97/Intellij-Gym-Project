@@ -1,0 +1,25 @@
+Error and Bugs Report For "Gym" Project by Daniel Collins 20076240 I.O.T
+
+1) First Attempt Logging In - When you first run the application and you wish to log in as a pre-saved user, you must first enter an invalid email then log in again using the valid email.
+    ie.
+
+
+            Please enter your email
+
+        ----------------------------------
+        Enter your email address
+        ----------------------------------
+        ==>> ***invalidemail***
+
+
+    press enter, then delete, then enter a character, then enter again, receiving this error; Access Denied: Invalid Email
+    Double press enter, then log in as normal using pre-saved email.
+
+
+2) Double enter - On some of the menus, after entering the prompted input, you must press the enter button twice as opposed to once. Everything else works as expected.
+
+
+3) Height - When creating a new Member, you are prompted to enter the height of the user. At this point, a double is expected (ie. 1.4). However, when 1.4 is entered you must press enter then delete the last character (in this case delete the 4) then re-enter the 4.
+    Also, the validation rules for height only work on random times. They could work when creating user1 but not work when creating user2.
+
+4) Return to Main Menu - After every going through an option in a sub-menu you are prompted with the message "Press any key to continue...". User presses enter TWICE and is then returned to the Main Menu where they will be asked to log in again. All previous information will be saved.
